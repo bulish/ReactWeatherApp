@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+// font sizes
+h1 {
+    font-size: clamp(3rem, 4.25vw, 7rem);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: clamp(1.1rem, 1.4vw, 5rem);
+    margin: 0.75rem auto;
+}
+
+h6 {
+    font-size: clamp(0.9rem, 1.2vw, 4rem);
+    color: rgb(230, 223, 223);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-image: url('./backgroundImg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(15vw + 16.5rem);
+    height: 80%;
+    background-image: linear-gradient(#5A48F2, #acd5ec);
+    border-radius: 3rem;
+    box-shadow: 1px 1px 2px #352c8b;
+    padding: calc(1vw + 1rem);
+    .search {
+        position: absolute;
+        right: 2rem;
+        top: 3rem;
+        input {
+            border: none;
+            outline: none;
+            padding: 0.25rem 0.5rem;
+            margin-right: 1rem;
+        }
+        .icon {
+            cursor: pointer;
+        }
+    }
+    .info {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        .flex {
+            display: flex;
+            justify-content: center;
+            font-size: clamp(2rem, 3vw, 7rem);
+            .temp {
+                display: flex;
+                align-items: center;
+            }
+            img {
+                height: clamp(5rem, 7vw, 15rem);
+            }
+        }
+        .table {
+            display: flex;
+            background-color: rgba(180, 200, 235, 0.5);
+            margin: 3rem 1rem 0 1rem;
+            .humidity {
+                border-right: 2px solid rgb(145, 138, 138);
+                width: 50%;
+            }
+            .uv {
+                width: 50%;
+            }
+        }
+    }
+}
