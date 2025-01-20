@@ -4,7 +4,7 @@ A simple React application that fetches real-time weather data from an API and d
 
 ## Author ✨
 
-Created by [bulish] (https://github.com/bulish)
+Created by **[bulish](https://github.com/bulish)**
 
 ## Features 🚀
 - Displays current weather based on the user's location.
